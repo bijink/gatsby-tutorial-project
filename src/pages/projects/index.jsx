@@ -16,7 +16,7 @@ const project = ({ data }) => {
         <h3>Project & websites I've Created</h3>
         <div className={styles.projects}>
           {projects.map(project => (
-            <Link key={project.id} to={"/projects" + project.frontmatter.slug}>
+            <Link key={project.id} to={"/projects/" + project.frontmatter.slug}>
               <div>
                 <Img fluid={project.frontmatter.thumb.childImageSharp.fluid} />
                 <h3>{project.frontmatter.title}</h3>
